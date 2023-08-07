@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imagen SVG y Botón</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: rgb(192, 255, 192);
+      color: black;
+    }
+
+    .svg-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    svg {
+      width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="redirigir('Página Anterior')">Página Anterior</button>
+  </div>
+
+  <div class="svg-container">
+    <!-- Aquí debes colocar la ruta a tu archivo SVG -->
+    <svg xmlns="https://OSTWALD.Ro.github.io/Diagrama/Relevador.svg" width="500" height="500" viewBox="0 0 500 500">
+      <!-- Contenido de tu imagen SVG -->
+      <!-- Por ejemplo, puedes añadir rectángulos, círculos, trazados, etc. -->
+    </svg>
+  </div>
+
+  <script>
+    function redirigir(pagina) {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
